@@ -15,14 +15,15 @@ Dectate is a powerful configuration engine for Python frameworks.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/dectate-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/dectate-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/dectate-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/dectate-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/dectate-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/dectate-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/dectate-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/dectate-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/dectate/badges/version.svg)](https://anaconda.org/conda-forge/dectate)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/dectate/badges/downloads.svg)](https://anaconda.org/conda-forge/dectate)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-dectate-green.svg)](https://anaconda.org/conda-forge/dectate) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/dectate.svg)](https://anaconda.org/conda-forge/dectate) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/dectate.svg)](https://anaconda.org/conda-forge/dectate) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/dectate.svg)](https://anaconda.org/conda-forge/dectate) |
 
 Installing dectate
 ==================
@@ -67,6 +68,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
