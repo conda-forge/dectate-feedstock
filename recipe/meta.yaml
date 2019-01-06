@@ -13,14 +13,13 @@ source:
 
 build:
   noarch: python
-  number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 1000
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
     - pip
     - python
-    - setuptools
 
   run:
     - python
