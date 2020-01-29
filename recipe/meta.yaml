@@ -1,6 +1,6 @@
 {% set name = "dectate" %}
-{% set version = "0.13" %}
-{% set sha256 = "299a5d3d674d7cd095c8489331ecece22e5a567ee8a7636e8b57bbb220c568e4" %}
+{% set version = "0.14" %}
+{% set sha256 = "56213abfe6ce31d6fe10dbf7a7cd94e07a26d5dc7cd0ae2e208c4ef2dbebb504" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1000
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
