@@ -1,6 +1,6 @@
 {% set name = "dectate" %}
-{% set version = "0.14" %}
-{% set sha256 = "56213abfe6ce31d6fe10dbf7a7cd94e07a26d5dc7cd0ae2e208c4ef2dbebb504" %}
+{% set version = "1.0.0" %}
+{% set sha256 = "9955243fcd1abd9b8bbd6d985094235aa97f32f54d19788bb5ad677077102b44" %}
 
 package:
   name: {{ name|lower }}
@@ -8,12 +8,12 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
@@ -40,7 +40,7 @@ about:
     Dectate is a powerful configuration engine for Python frameworks.
   doc_url: http://dectate.readthedocs.org/
   dev_url: https://github.com/morepath/dectate
-  
+
 extra:
   recipe-maintainers:
     - stuertz
